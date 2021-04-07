@@ -1,0 +1,362 @@
+// Created     : 2005-03-10 20:8:22
+// DLL id      : C:\PROGRA~1\FICHIE~1\DHI\MikeZero\pfs2004.dll
+// PFS version : Jan 18 2005 19:27:36
+
+[BndCondition]
+   Comment = ''
+   [BndCndArray]
+      [BndItem]
+         DescType = 0, 1, 'Tinée', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AfflTinee1', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffTinee2', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'Var', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffVar2', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'Estéron', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffEsteron1', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffEsteron3', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffEsteron2', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffVar3', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'AffTinee3', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 1, 'Vésubie', 0, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = true, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 2, 'Q=0', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 5, 'Var', 100394.8124546083, 0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0, 0, 0
+         Inflow = false, false, false, false
+         ADRR = '', 0, 0
+         QhADM12 = 2, 1, 0
+         AutoCalQh = 0, 0.001, 40
+         BndTS = 0, ||, 0, 0, '', 0, 1
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0, 0, |.\Sea.dfs0|, 0, 1, 'Sea level', 0, 1
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+   EndSect  // BndCndArray
+
+EndSect  // BndCondition
+

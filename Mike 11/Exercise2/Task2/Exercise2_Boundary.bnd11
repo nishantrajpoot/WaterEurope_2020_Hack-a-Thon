@@ -1,0 +1,65 @@
+// Created     : 2020-01-24 8:59:4
+// DLL         : C:\Program Files (x86)\DHI\2020\bin\x64\pfs2004.dll
+// Version     : 18.0.0.13317
+
+[BndCondition]
+   Comment = ''
+   [BndCndArray]
+      [BndItem]
+         DescType = 0, 1, 'Var', 0.0, 0.0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0.0, 0.0, 0.0
+         Inflow = true, false, false, false
+         ADRR = '', 0.0, 0
+         QhADM12 = 2, 1.0, 0.0
+         AutoCalQh = 0, 0.001, 40.0
+         BndTS = 0, ||, 0.0, 0, '', 0, 1.0
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0.0, 0, |.\Exercise2_TimeSeries.dfs0|, 0.0, 1, 'Q_300', 0, 1.0
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+      [BndItem]
+         DescType = 0, 5, 'Var', 24012.5026, 0.0, '', ''
+         OpenDesc = 0, 0
+         Dam = 0.0, 0.0, 0.0
+         Inflow = false, false, false, false
+         ADRR = '', 0.0, 0
+         QhADM12 = 2, 1.0, 0.0
+         AutoCalQh = 0, 0.001, 40.0
+         BndTS = 0, ||, 0.0, 0, '', 0, 1.0
+         [FractionArray]
+         EndSect  // FractionArray
+
+         [HDArray]
+         EndSect  // HDArray
+
+         [InflowArray]
+            Inflow = 2, 0.0, 1, ||, 0.0, 0, '', 0, 1.0
+         EndSect  // InflowArray
+
+         [QhArray]
+         EndSect  // QhArray
+
+         [ComponentArray]
+         EndSect  // ComponentArray
+
+      EndSect  // BndItem
+
+   EndSect  // BndCndArray
+
+EndSect  // BndCondition
+

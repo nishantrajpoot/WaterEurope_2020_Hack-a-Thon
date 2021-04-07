@@ -1,0 +1,11 @@
+2020-02-25 16:28:03: MIKE 1D Engine started (2020 - 64 bit)
+                     Version of MIKE 1D                            : 18 (18.0.0.13317, 2019-11-14)
+                     Version of DHI.Mike1D.Engine                  : 18 (18.0.0.13317, 2019-11-14 19:35:08)
+                     Version of DHI.Mike1D.RainfallRunoffModule    : 18 (18.0.0.13317, 2019-11-14 19:38:15)
+2020-02-25 16:28:03: Loading setup file Var02.sim11...
+2020-02-25 16:28:04: Diagnostics messages during load:
+2020-02-25 16:28:04: ERROR: Error reading setup file 'C:\Users\nisha\MACS\First Semester\Water Europe\Var\Var\Mike11\Var02.nwk11', invalid (old) format ('Keyword: projection number: 1 not found in section: DATA_AREA') (BR_ERR_CannotReadFileFormat)
+2020-02-25 16:28:04: ERROR: Unexpected exception occurred. Please see log file for details. Exception message: Failed loading data from M11 bridge (DHI.Mike1D.M11Bridge.M11Bridge): C:\Users\nisha\MACS\First Semester\Water Europe\Var\Var\Mike11\Var02.sim11
+2020-02-25 16:28:04: Exception: Failed loading data from M11 bridge (DHI.Mike1D.M11Bridge.M11Bridge): C:\Users\nisha\MACS\First Semester\Water Europe\Var\Var\Mike11\Var02.sim11
+                     Error reading setup file 'C:\Users\nisha\MACS\First Semester\Water Europe\Var\Var\Mike11\Var02.nwk11', invalid (old) format ('Keyword: projection number: 1 not found in section: DATA_AREA')
+                     Keyword: projection number: 1 not found in section: DATA_AREA

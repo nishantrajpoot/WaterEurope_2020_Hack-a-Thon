@@ -1,0 +1,378 @@
+
+
+                                      E
+       EUROPEAN HYDROLOGIC SYSTEM  S  H  E  SYSTEME HYDROLOGIQUE EUROPEEN
+                                      S
+
+                                     / \ 
+                                     \ / 
+
+                          M I K E   S H E   W M   -   a   DHI   Product
+                          =============================================
+ 
+       MIKE SHE version : Service Pack 3 for 2004, April 2005
+
+
+
+
+
+       Flow input file : Model01.SHE
+       -----------------------------
+
+
+
+ 
+================================================================================
+
+
+
+
+ SIMULATION PERIOD : 1994/11/ 5, 0: 0 - 1994/11/ 6, 0: 0 
+
+   -  Title        :  
+   -  Description  :  
+
+
+ COMPONENTS INCLUDED :   OC
+
+ Optional components included:
+
+
+ MODEL SIZE :
+ 
+   No. of points in x-dir                 :   250
+   No. of points in y-dir                 :   270
+   No. of computational points pr layer   : 31466
+   No. of internal points (excl.boundary) : 30642
+
+   Grid size (m)                          :   300.000
+   Model origin (X,Y) (km)                :     0.000     0.000
+   UTM zone (Not specified - local system):     0
+
+
+
+ END OF FRAME INITIALIZATION
+
+
+ ENTER DINSZ
+
+
+ Exit DINSZ
+
+
+ ENTER DINUZ
+
+
+ Exit DINUZ
+
+
+
+
+
+ START OF SIMULATION
+
+ 
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  2 54 (      2.90 hrs):
+          Max. correction of depth= 0.66706E-04 m    in grid point (  101  199).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  3 33 (      3.55 hrs):
+          Max. correction of depth= 0.64294E-04 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  3 44 (      3.73 hrs):
+          Max. correction of depth= 0.97198E-04 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  3 55 (      3.91 hrs):
+          Max. correction of depth= 0.13756E-03 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  4 11 (      4.18 hrs):
+          Max. correction of depth= 0.22741E-03 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  4 22 (      4.36 hrs):
+          Max. correction of depth= 0.22944E-03 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  4 33 (      4.55 hrs):
+          Max. correction of depth= 0.24107E-03 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  4 44 (      4.73 hrs):
+          Max. correction of depth= 0.24439E-03 m    in grid point (   52  185).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  4 55 (      4.91 hrs):
+          Max. correction of depth= 0.23631E-03 m    in grid point (   52  185).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6  6 (      6.11 hrs):
+          Max. correction of depth= 0.51889E-04 m    in grid point (   52  186).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 20 (      6.33 hrs):
+          Max. correction of depth= 0.51152E-04 m    in grid point (   52  185).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 27 (      6.45 hrs):
+          Max. correction of depth= 0.64638E-04 m    in grid point (   52  185).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 35 (      6.58 hrs):
+          Max. correction of depth= 0.83068E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 42 (      6.70 hrs):
+          Max. correction of depth= 0.10752E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 50 (      6.83 hrs):
+          Max. correction of depth= 0.13388E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  6 57 (      6.95 hrs):
+          Max. correction of depth= 0.16512E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 25 (      9.42 hrs):
+          Max. correction of depth= 0.51956E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 30 (      9.50 hrs):
+          Max. correction of depth= 0.58560E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 35 (      9.58 hrs):
+          Max. correction of depth= 0.66084E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 40 (      9.67 hrs):
+          Max. correction of depth= 0.74628E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 45 (      9.75 hrs):
+          Max. correction of depth= 0.84245E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 50 (      9.83 hrs):
+          Max. correction of depth= 0.94906E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5  9 55 (      9.92 hrs):
+          Max. correction of depth= 0.10651E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10  0 (     10.00 hrs):
+          Max. correction of depth= 0.11887E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10  5 (     10.09 hrs):
+          Max. correction of depth= 0.15556E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 11 (     10.18 hrs):
+          Max. correction of depth= 0.21320E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 16 (     10.27 hrs):
+          Max. correction of depth= 0.27667E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 22 (     10.37 hrs):
+          Max. correction of depth= 0.31249E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 28 (     10.47 hrs):
+          Max. correction of depth= 0.33446E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 34 (     10.56 hrs):
+          Max. correction of depth= 0.35261E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 39 (     10.66 hrs):
+          Max. correction of depth= 0.36737E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 45 (     10.75 hrs):
+          Max. correction of depth= 0.37905E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 51 (     10.85 hrs):
+          Max. correction of depth= 0.38808E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 10 56 (     10.94 hrs):
+          Max. correction of depth= 0.39495E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11  0 (     11.00 hrs):
+          Max. correction of depth=-0.89286E-04 m    in grid point (  156  180).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11  5 (     11.09 hrs):
+          Max. correction of depth= 0.30797E-03 m    in grid point (  156  180).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 11 (     11.18 hrs):
+          Max. correction of depth= 0.30068E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 16 (     11.27 hrs):
+          Max. correction of depth= 0.30396E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 22 (     11.36 hrs):
+          Max. correction of depth= 0.30339E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 27 (     11.45 hrs):
+          Max. correction of depth= 0.30035E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 33 (     11.55 hrs):
+          Max. correction of depth= 0.29552E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 38 (     11.64 hrs):
+          Max. correction of depth= 0.28943E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 44 (     11.73 hrs):
+          Max. correction of depth= 0.28247E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 49 (     11.82 hrs):
+          Max. correction of depth= 0.27496E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 11 55 (     11.91 hrs):
+          Max. correction of depth= 0.26718E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 12  0 (     12.00 hrs):
+          Max. correction of depth= 0.25937E-03 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 12  3 (     12.05 hrs):
+          Max. correction of depth=-0.54717E-04 m    in grid point (  156  180).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14  3 (     14.05 hrs):
+          Max. correction of depth= 0.36149E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14  6 (     14.11 hrs):
+          Max. correction of depth= 0.51314E-04 m    in grid point (  192  174).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 10 (     14.16 hrs):
+          Max. correction of depth= 0.12449E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 13 (     14.22 hrs):
+          Max. correction of depth= 0.22100E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 17 (     14.28 hrs):
+          Max. correction of depth= 0.36254E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 21 (     14.35 hrs):
+          Max. correction of depth= 0.57765E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 25 (     14.42 hrs):
+          Max. correction of depth= 0.90585E-03 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 29 (     14.49 hrs):
+          Max. correction of depth= 0.14206E-02 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 34 (     14.57 hrs):
+          Max. correction of depth= 0.22678E-02 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 39 (     14.64 hrs):
+          Max. correction of depth= 0.37630E-02 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 44 (     14.73 hrs):
+          Max. correction of depth= 0.66575E-02 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 49 (     14.82 hrs):
+          Max. correction of depth= 0.12958E-01 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 14 54 (     14.91 hrs):
+          Max. correction of depth= 0.28753E-01 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15  0 (     15.00 hrs):
+          Max. correction of depth= 0.56357E-01 m    in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15  6 (     15.10 hrs):
+          Max. correction of depth= 0.26075     m    in grid point (  145  178).
+          Max. water balance error =-0.20066E+06 mm/d in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 12 (     15.21 hrs):
+          Max. correction of depth=-0.53138     m    in grid point (  145  179).
+          Max. water balance error =-0.39158E+06 mm/d in grid point (  145  179).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 19 (     15.32 hrs):
+          Max. correction of depth= 0.51608     m    in grid point (  145  178).
+          Max. water balance error =-0.36621E+06 mm/d in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 26 (     15.44 hrs):
+          Max. correction of depth= 0.51461     m    in grid point (  145  178).
+          Max. water balance error =-0.35630E+06 mm/d in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 34 (     15.56 hrs):
+          Max. correction of depth= 0.51347     m    in grid point (  145  178).
+          Max. water balance error = 0.37919E+06 mm/d in grid point (  145  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 41 (     15.69 hrs):
+          Max. correction of depth= 0.62555     m    in grid point (   54  178).
+          Max. water balance error =-0.43327E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 50 (     15.83 hrs):
+          Max. correction of depth= 0.62338     m    in grid point (   54  178).
+          Max. water balance error =-0.40726E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 15 58 (     15.97 hrs):
+          Max. correction of depth= 0.61155     m    in grid point (   54  178).
+          Max. water balance error =-0.38548E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16  0 (     16.00 hrs):
+          Max. correction of depth=-0.16383E-03 m    in grid point (   55  176).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16  8 (     16.12 hrs):
+          Max. correction of depth=-0.58112     m    in grid point (   54  177).
+          Max. water balance error = 0.40611E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 15 (     16.25 hrs):
+          Max. correction of depth= 0.60303     m    in grid point (   54  178).
+          Max. water balance error =-0.39310E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 23 (     16.38 hrs):
+          Max. correction of depth= 0.61056     m    in grid point (   54  178).
+          Max. water balance error =-0.39200E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 30 (     16.50 hrs):
+          Max. correction of depth= 0.58553     m    in grid point (   54  178).
+          Max. water balance error = 0.36614E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 38 (     16.63 hrs):
+          Max. correction of depth= 0.56418     m    in grid point (   54  178).
+          Max. water balance error = 0.35343E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 45 (     16.75 hrs):
+          Max. correction of depth= 0.55544     m    in grid point (   54  178).
+          Max. water balance error = 0.34714E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 16 53 (     16.88 hrs):
+          Max. correction of depth= 0.54571     m    in grid point (   54  178).
+          Max. water balance error = 0.34034E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17  0 (     17.00 hrs):
+          Max. correction of depth= 0.53228     m    in grid point (   54  178).
+          Max. water balance error = 0.33195E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17  8 (     17.14 hrs):
+          Max. correction of depth= 0.53102     m    in grid point (   54  178).
+          Max. water balance error = 0.31824E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17 17 (     17.28 hrs):
+          Max. correction of depth= 0.50603     m    in grid point (   54  178).
+          Max. water balance error = 0.30066E+06 mm/d in grid point (   54  178).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17 26 (     17.43 hrs):
+          Max. correction of depth=-0.47967     m    in grid point (   54  177).
+          Max. water balance error = 0.28447E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17 36 (     17.59 hrs):
+          Max. correction of depth=-0.46098     m    in grid point (   54  177).
+          Max. water balance error = 0.26947E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17 46 (     17.76 hrs):
+          Max. correction of depth=-0.44611     m    in grid point (   54  177).
+          Max. water balance error = 0.25643E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 17 56 (     17.94 hrs):
+          Max. correction of depth=-0.43420     m    in grid point (   54  177).
+          Max. water balance error = 0.24490E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 18  0 (     18.00 hrs):
+          Max. correction of depth= 0.18856E-01 m    in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 18 12 (     18.19 hrs):
+          Max. correction of depth=-0.46537     m    in grid point (   54  177).
+          Max. water balance error = 0.26786E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 18 24 (     18.40 hrs):
+          Max. correction of depth= 0.46598     m    in grid point (  206  126).
+          Max. water balance error = 0.27028E+06 mm/d in grid point (  206  126).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 18 37 (     18.61 hrs):
+          Max. correction of depth= 0.43106     m    in grid point (  206  126).
+          Max. water balance error = 0.23074E+06 mm/d in grid point (  206  126).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 18 50 (     18.84 hrs):
+          Max. correction of depth= 0.41489     m    in grid point (  206  126).
+          Max. water balance error = 0.21551E+06 mm/d in grid point (  206  126).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19  0 (     19.00 hrs):
+          Max. correction of depth=-0.35611     m    in grid point (   54  177).
+          Max. water balance error =-0.20399E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19  9 (     19.14 hrs):
+          Max. correction of depth= 0.33395     m    in grid point (  205  133).
+          Max. water balance error =-0.20425E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19 17 (     19.29 hrs):
+          Max. correction of depth= 0.33431     m    in grid point (  205  133).
+          Max. water balance error =-0.20197E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19 26 (     19.43 hrs):
+          Max. correction of depth= 0.33677     m    in grid point (  205  133).
+          Max. water balance error =-0.20086E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19 34 (     19.57 hrs):
+          Max. correction of depth= 0.33780     m    in grid point (  205  133).
+          Max. water balance error =-0.19933E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19 43 (     19.71 hrs):
+          Max. correction of depth= 0.33805     m    in grid point (  205  133).
+          Max. water balance error =-0.19745E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 19 51 (     19.86 hrs):
+          Max. correction of depth= 0.33687     m    in grid point (  205  133).
+          Max. water balance error =-0.19485E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20  0 (     20.00 hrs):
+          Max. correction of depth= 0.33460     m    in grid point (  205  133).
+          Max. water balance error =-0.19171E+06 mm/d in grid point (  205  133).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20  9 (     20.16 hrs):
+          Max. correction of depth=-0.36336     m    in grid point (   54  177).
+          Max. water balance error = 0.20719E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20 19 (     20.32 hrs):
+          Max. correction of depth=-0.38525     m    in grid point (   54  177).
+          Max. water balance error = 0.20967E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20 30 (     20.50 hrs):
+          Max. correction of depth=-0.38519     m    in grid point (   54  177).
+          Max. water balance error = 0.20039E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20 41 (     20.68 hrs):
+          Max. correction of depth=-0.38564     m    in grid point (   54  177).
+          Max. water balance error = 0.19277E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 20 52 (     20.87 hrs):
+          Max. correction of depth=-0.38522     m    in grid point (   54  177).
+          Max. water balance error = 0.18571E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 21  0 (     21.00 hrs):
+          Max. correction of depth=-0.34180     m    in grid point (  175   30).
+          Max. water balance error = 0.19598E+06 mm/d in grid point (  175   30).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 21 13 (     21.21 hrs):
+          Max. correction of depth=-0.41741     m    in grid point (   54  177).
+          Max. water balance error = 0.19451E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 21 26 (     21.43 hrs):
+          Max. correction of depth=-0.40622     m    in grid point (   54  177).
+          Max. water balance error = 0.17510E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 21 40 (     21.67 hrs):
+          Max. correction of depth=-0.39811     m    in grid point (   54  177).
+          Max. water balance error = 0.16338E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 21 55 (     21.91 hrs):
+          Max. correction of depth=-0.38907     m    in grid point (   54  177).
+          Max. water balance error = 0.15255E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 22  0 (     22.00 hrs):
+          Max. correction of depth=-0.21313     m    in grid point (  175   30).
+          Max. water balance error = 0.14254E+06 mm/d in grid point (  175   30).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 22 16 (     22.27 hrs):
+          Max. correction of depth=-0.39981     m    in grid point (   54  177).
+          Max. water balance error = 0.16834E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 22 33 (     22.55 hrs):
+          Max. correction of depth=-0.38806     m    in grid point (   54  177).
+          Max. water balance error = 0.14495E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 22 51 (     22.85 hrs):
+          Max. correction of depth=-0.36907     m    in grid point (   54  177).
+          Max. water balance error = 0.13523E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 23  0 (     23.00 hrs):
+          Max. correction of depth=-0.42693     m    in grid point (  175   30).
+          Max. water balance error = 0.23601E+06 mm/d in grid point (  175   30).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 23 20 (     23.33 hrs):
+          Max. correction of depth=-0.36579     m    in grid point (   54  177).
+          Max. water balance error = 0.13150E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  5 23 40 (     23.67 hrs):
+          Max. correction of depth=-0.35200     m    in grid point (   54  177).
+          Max. water balance error = 0.12603E+06 mm/d in grid point (   54  177).
+ WARNING: Max. no. overland flow iterations exceeded at 1994 11  6  0  0 (     24.00 hrs):
+          Max. correction of depth=-0.33125     m    in grid point (   54  177).
+          Max. water balance error = 0.14169E+06 mm/d in grid point (   54  177).
+
+
+
+ NORMAL COMPLETION OF SHE RUN :    24.00000     hrs ,                 228 time steps.
+ 
+
+No. of OC time steps             :       228
+Average time step length         :   0.10526   hrs. =   6.31579   min. =   378.9474       sec.
+Total no. of iterations          :      3955
+- Average / step                 :     17.35
+- Max. iter exceeded in          : 115 steps.
+
+ELAPSED TIME USAGE
+==================
+Function                                Elapsed seconds
+-------------------------------------------------------
+ Initialization phase                       1.000000    
+ Simulation phase (includes others below)   188.0000    
+ Overland                                   186.0000    
+ Met. input                                 0.000000    
+ Grid series output                         0.000000    
+ Detailed TS output                         0.000000    

@@ -1,0 +1,82 @@
+// Created     : 2005-11-30 9:3:55
+// DLL id      : C:\PROGRA~1\FICHIE~1\DHI\MikeZero\pfs2004.dll
+// PFS version : Mar 30 2005 18:58:21
+
+[SHERES]
+   [general]
+      [version]
+         VersionNumber = 1003
+      EndSect  // version
+
+   EndSect  // general
+
+   [files]
+      [files_general]
+         NrOfFiles = 1
+      EndSect  // files_general
+
+      [files_id]
+         FileName = |.\Model01_overland.dfs2|
+         Filecode = 1
+      EndSect  // files_id
+
+   EndSect  // files
+
+   [data]
+      [data_general]
+         NrofData = 1
+      EndSect  // data_general
+
+      [data_id]
+         Datatypes = 61
+         SpeciesNumbers = 0
+         FileReferences = 1
+         EumTypes = 100280
+         EumUnits = 1000
+      EndSect  // data_id
+
+   EndSect  // data
+
+   [extra]
+      [extra_files]
+         NrofFiles = 0
+      EndSect  // extra_files
+
+   EndSect  // extra
+
+   [DATA_AREA]
+      x0 = 0
+      y0 = 0
+      x1 = 75000
+      y1 = 81000
+   EndSect  // DATA_AREA
+
+   [OutputPeriodAndMaxTimestep]
+      StartDate = 1994, 11, 5, 0, 0
+      EndDate = 1994, 11, 6, 0, 0
+      MaxTimestep_Hrs = 1
+      HotstartData = 0
+      HotstartStoringTimestep_Hrs = 0
+   EndSect  // OutputPeriodAndMaxTimestep
+
+   [Items]
+      NrofItems = 1
+      [Item]
+         Name = 'depth of overland water'
+         FileName = |.\Model01_overland.dfs2|
+         FileCode = 1
+         Itemno = 1
+         EumType = 100280
+         EumUnit = 1000
+         DataType = 61
+         SpeciesNumber = 0
+      EndSect  // Item
+
+   EndSect  // Items
+
+   [Species]
+      NrOfSpecies = 0
+   EndSect  // Species
+
+EndSect  // SHERES
+

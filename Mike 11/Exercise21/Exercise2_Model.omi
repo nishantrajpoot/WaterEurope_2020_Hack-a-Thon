@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<LinkableComponent Type="DHI.OpenMI.Mike11.Mike11LinkableComponent" Assembly="DHI.OpenMI.Mike11, Version=16.0.0.0, Culture=neutral, PublicKeyToken=c513450b5d0bf0bf" xmlns="http://www.openmi.org/LinkableComponent.xsd">
+<Arguments>
+<Argument Key="SimFile" ReadOnly="true" Value="D:\BTU 1819 lectures-tutorials\WS20192020\water_europe\group_mike11\Exercise21\Exercise2_Model.sim11" />
+</Arguments>
+</LinkableComponent>

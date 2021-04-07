@@ -1,0 +1,3127 @@
+// Created     : 2005-11-30 9:3:50
+// DLL id      : C:\PROGRA~1\FICHIE~1\DHI\MikeZero\pfs2004.dll
+// PFS version : Mar 30 2005 18:58:21
+
+[MIKESHE_FLOWMODEL]
+   [FlowModelDocVersion]
+      Touched = 0
+      IsDataUsedInSetup = 1
+      Version = 8
+   EndSect  // FlowModelDocVersion
+
+   [ViewSettings]
+      Touched = 0
+      IsDataUsedInSetup = 1
+      ShowValidationIcons = 1
+      DefaultZoomDataAreaUndefined = 0
+      DefaultZoomDataArea_X0 = 50684.93150684932
+      DefaultZoomDataArea_Y0 = 1198.630136986302
+      DefaultZoomDataArea_X1 = 57020.54794520548
+      DefaultZoomDataArea_Y1 = 6335.616438356165
+      MaxZoomDataAreaUndefined = 0
+      MaxZoomDataArea_X0 = 0
+      MaxZoomDataArea_Y0 = 0
+      MaxZoomDataArea_X1 = 75000
+      MaxZoomDataArea_Y1 = 81000
+   EndSect  // ViewSettings
+
+   [Overlays]
+      UseModelDomain = 1
+      [Foreground]
+         Touched = 0
+         IsDataUsedInSetup = 1
+         MzSEPfsListItemCount = 0
+         NumberOfLayers = 0
+      EndSect  // Foreground
+
+      [Background]
+         Touched = 0
+         IsDataUsedInSetup = 1
+         MzSEPfsListItemCount = 0
+         NumberOfLayers = 0
+      EndSect  // Background
+
+      [Current_Layer]
+         Touched = 0
+         IsDataUsedInSetup = 1
+         [Grid]
+            Touched = 0
+            IsDataUsedInSetup = 1
+            Transparency = 3
+         EndSect  // Grid
+
+      EndSect  // Current_Layer
+
+   EndSect  // Overlays
+
+   [SimSpec]
+      Touched = 1
+      IsDataUsedInSetup = 1
+      ModelType = 0
+      [ModelComp]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         ET = 0
+         OL = 1
+         SZ = 0
+         UZ = 0
+         WM = 1
+         River = 0
+         Transport = 0
+         TransportType = 1
+         ProcessType = 0
+         UZ_ModelType = 0
+         SZ_ModelType = 0
+         OL_ModelType = 0
+      EndSect  // ModelComp
+
+      [ModModelComp]
+         Touched = 1
+         IsDataUsedInSetup = 0
+         OL = 0
+         River = 0
+         RiverModelType = 0
+         Recharge = 0
+         Recharge_ModelType = 0
+         Subsurface = 1
+         Subsurface_ModelType = 1
+         Modflow2000_BCFType = 1
+         ET = 0
+      EndSect  // ModModelComp
+
+      [SimTitle]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         Title = ''
+         Description = ''
+      EndSect  // SimTitle
+
+      [SimulationPeriod]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         HotStart = 0
+         HotStartResultFile = ||
+         HotStartDate = -1, -1, -1, -1, -1
+         HotStartDateIndex = 0
+         SimStartFromHotStartDate = 0
+         SIMSTART = 1994, 11, 5, 0, 0
+         SIMEND = 1994, 11, 6, 0, 0
+      EndSect  // SimulationPeriod
+
+      [STRESSPERIODS]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 1
+         MfSteadyState = 0
+         StressPeriodRadio = 0
+         [STRESSPERIOD_PROPPAGE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+         EndSect  // STRESSPERIOD_PROPPAGE
+
+         [Item_1]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            Dates = 2000, 2, 1, 0, 0
+            DELT = 1
+            TMIN = 0
+            TMAX = 1000
+            TSMULT = 10
+            TSDIV = 10
+            NSTP = 1
+            SSTR = 0
+         EndSect  // Item_1
+
+      EndSect  // STRESSPERIODS
+
+      [CompControlParaTimeStep]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         InitialTimeStep = 0.1
+         MaxAllowedTimeStep = 1
+         MaxAllowedSZTimeStep = 12
+         MIKE11TimeStep = 10
+         IncrementRate = 0.05
+         MaxPrecDepthPerTimeStep = 1
+         MaxInfiltDepthPerTimeStep  = 1
+         PrecThresholdRate = 0.05
+      EndSect  // CompControlParaTimeStep
+
+      [CompControlParaOL]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         MaxNoOfIter = 20
+         IterStopCriteria = 5e-005
+         WaterDepthThreshold = 0.0001
+      EndSect  // CompControlParaOL
+
+      [CompControlParaUZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MaxWaterBalanceError = 0.03
+         MaxNoOfIter = 50
+         IterStopCriteria = 0.002
+         CouplingCriteria = 0.001
+      EndSect  // CompControlParaUZ
+
+      [CompControlParaSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         SolverOption = 0
+         [CompControlParaSZPCGTrans]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MaxNoOfIter = 50
+            GradualDrainActivation = 1
+            MaxHeadChange = 0.001
+            HorizontalConductanceAveraging = 1
+            MaxResidualError = 0.0001
+            SatThicknessThreshold = 0.05
+            UnderRelaxFactor = 0.99
+            UnderRelaxation = 0
+         EndSect  // CompControlParaSZPCGTrans
+
+         [CompControlParaSZPCGSteady]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MaxNoOfIter = 1000
+            GradualDrainActivation = 1
+            MaxHeadChange = 0.001
+            HorizontalConductanceAveraging = 1
+            MaxResidualError = 1e-005
+            SatThicknessThreshold = 0.05
+            UnderRelaxFactor = 0.2
+            UnderRelaxation = 1
+         EndSect  // CompControlParaSZPCGSteady
+
+         [CompControlParaSZSOR]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MaxNoOfIter = 200
+            MaxHeadChange = 0.001
+            MaxResidualError = 0.0001
+            SatThicknessThreshold = 0.05
+            OverRelaxFactor = 1.3
+         EndSect  // CompControlParaSZSOR
+
+         [CompControlParaRivEx]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MaxFractionHPointVolume = 0.9
+         EndSect  // CompControlParaRivEx
+
+      EndSect  // CompControlParaSZ
+
+      [CompControlParaModPackage]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         WeightingRelPermOption = 0
+         HDRY = 0
+         HDRY2 = 1
+         WettingThreshold = 0
+      EndSect  // CompControlParaModPackage
+
+      [AirFlowSimulationParametersMod]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DensityWater = 1000
+         DensityAir = 1.777
+         ViscosityWater = 0.001
+         ViscosityAir = 1.983e-005
+         CompressibilityWater = 1e-008
+         CompressibilityAir = 1.777e-005
+         StdAtmPressure = 1010
+         GravityAcceleration = 9.81
+         TypeAmbientWaterHeadInput = 1
+      EndSect  // AirFlowSimulationParametersMod
+
+      [CompControlParaModSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         SolverOption = 0
+         [CompControlParaModLMG]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MXITER = 20
+            MXCYC = 50
+            BCLOSE = 0.01
+            DAMP = 1
+            DUP = 1
+            DLOW = 0.2
+            STOR1 = 3
+            STOR2 = 2.2
+            STOR3 = 5.4
+            ICG = 1
+            UseDefault = 1
+            IOUTAMG = 0
+         EndSect  // CompControlParaModLMG
+
+         [CompControlParaModPCG2]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MXITER = 100
+            ITER1 = 30
+            HCLOSE = 0.001
+            RCLOSE = 0.01
+            RELAX = 1
+            IPRPCG = 1
+            MUTPCG = 0
+            DAMP = 1
+         EndSect  // CompControlParaModPCG2
+
+         [CompControlParaModPCG4]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MXITER = 200
+            ITERI = 50
+            HCLOSE = 0.01
+            BFACT = 0.1
+            RESRED = 1
+            MNORTH = 5
+            ApplyDampening = 1
+            UseNewtonRaphson = 0
+            INEWT = 0
+            IDMPBOT = 1
+            MUTPCG = 2
+            OutputFromSolver = 0
+         EndSect  // CompControlParaModPCG4
+
+         [CompControlParaModSIP]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MXITER = 500
+            NPARM = 5
+            ACCL = 1
+            HCLOSE = 0.0001
+            IPRSIP = 0
+            WSEED = 0.001
+            SeedOption = 0
+            IPCALC = 1
+         EndSect  // CompControlParaModSIP
+
+         [CompControlParaModSOR]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            MXITER = 500
+            HCLOSE = 0.001
+            ACCL = 1
+            IPRSOR = 999
+         EndSect  // CompControlParaModSOR
+
+      EndSect  // CompControlParaModSZ
+
+   EndSect  // SimSpec
+
+   [Catchment]
+      Touched = 1
+      IsDataUsedInSetup = 1
+      type = 1
+      nxShp = 200
+      nyShp = 200
+      sizeShp = 1000
+      x0Shp = 0
+      y0Shp = 0
+      UTMzoneShp = 0
+      orientShp = 0
+      ShapeAxisUnit = 1000
+      [DFS_2D_DATA_FILE]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         FILE_NAME = |.\Maps\Grid.dfs2|
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = 1
+      EndSect  // DFS_2D_DATA_FILE
+
+      [SHAPE_FILE]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = ''
+      EndSect  // SHAPE_FILE
+
+   EndSect  // Catchment
+
+   [Subcatchments]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      DistributionType = 1
+      Type = 1
+      ShapeAxisUnit = 1000
+      ShapeGapFillName = ''
+      NO_ZONES = 0
+      [DFS_2D_DATA_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = 1
+      EndSect  // DFS_2D_DATA_FILE
+
+      [SHAPE_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = ''
+      EndSect  // SHAPE_FILE
+
+   EndSect  // Subcatchments
+
+   [Topography]
+      Touched = 1
+      IsDataUsedInSetup = 1
+      Type = 1
+      FixedValue = 0
+      InterpMethod = 2
+      SearchRadius = 1000
+      ShowGridData = 1
+      ShowShapeData = 1
+      ShapeAxisUnit = 1000
+      ShapeItemUnit = 1000
+      [DFS_2D_DATA_FILE]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         FILE_NAME = |.\Maps\Topography.dfs2|
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = 1
+      EndSect  // DFS_2D_DATA_FILE
+
+      [SHAPE_FILE]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = ''
+      EndSect  // SHAPE_FILE
+
+      [XYZ_FILE]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         FILE_NAME = ||
+      EndSect  // XYZ_FILE
+
+   EndSect  // Topography
+
+   [Precipitation]
+      Touched = 1
+      IsDataUsedInSetup = 1
+      SM = 0
+      RechargeOption = 0
+      PondingOption = 0
+      [PrecipitationRate]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         DistributionType = 2
+         [GLOBAL]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FIXED_VALUE = 0
+            TYPE = 1
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // GLOBAL
+
+         [STATION_BASED]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            NO_TIMESERIES = 6
+            TYPE = 1
+            ShapeAxisUnit = 1000
+            ShapeGapFillName = ''
+            [DFS_2D_DATA_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Maps\RainThiessen.dfs2|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+         EndSect  // STATION_BASED
+
+         [FULLY_DISTRIBUTED]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            TYPE = 1
+            [DFS_2D_DATA_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+         EndSect  // FULLY_DISTRIBUTED
+
+         [TIME_SERIES_1]
+            NAME = 'Grid code = 1'
+            GRIDCODEID = '1'
+            GRIDCODE = 1
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_1
+
+         [TIME_SERIES_2]
+            NAME = 'Grid code = 2'
+            GRIDCODEID = '2'
+            GRIDCODE = 2
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 2
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_2
+
+         [TIME_SERIES_3]
+            NAME = 'Grid code = 3'
+            GRIDCODEID = '3'
+            GRIDCODE = 3
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 3
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_3
+
+         [TIME_SERIES_4]
+            NAME = 'Grid code = 4'
+            GRIDCODEID = '4'
+            GRIDCODE = 4
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 4
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_4
+
+         [TIME_SERIES_5]
+            NAME = 'Grid code = 5'
+            GRIDCODEID = '5'
+            GRIDCODE = 5
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 5
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_5
+
+         [TIME_SERIES_6]
+            NAME = 'Grid code = 6'
+            GRIDCODEID = '6'
+            GRIDCODE = 6
+            FIXED_VALUE = 0
+            TYPE = 2
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = |.\Time\Prates.dfs0|
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 6
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // TIME_SERIES_6
+
+      EndSect  // PrecipitationRate
+
+      [SNOWMELT]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         [GLOBAL]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FIXED_VALUE = 0
+            TYPE = 1
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // GLOBAL
+
+         [STATION_BASED]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            NO_TIMESERIES = 0
+            TYPE = 1
+            ShapeAxisUnit = 1000
+            ShapeGapFillName = ''
+            [DFS_2D_DATA_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+         EndSect  // STATION_BASED
+
+         [FULLY_DISTRIBUTED]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            TYPE = 1
+            [DFS_2D_DATA_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+         EndSect  // FULLY_DISTRIBUTED
+
+      EndSect  // SNOWMELT
+
+      [SNOWMELTCONST]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Threshold = 0
+         DegreeDayFactor = 2
+      EndSect  // SNOWMELTCONST
+
+      [NetRainfallFraction]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         Type = 0
+         FixedValue = 0.9
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99000
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // NetRainfallFraction
+
+      [InfiltrationFraction]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 1
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99000
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // InfiltrationFraction
+
+      [RechargeFraction]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99000
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // RechargeFraction
+
+      [RechargeLayer]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+      EndSect  // RechargeLayer
+
+      [PondingElevation]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+      EndSect  // PondingElevation
+
+   EndSect  // Precipitation
+
+   [LandUse]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Paved = 0
+      Irrigation = 0
+      PavedGradientCheck = 0
+      Priorities = 1
+      [VEGETATION]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         C1 = 0.3
+         C2 = 0.2
+         C3 = 20
+         C_INT = 0.05
+         A_ROOT = 0.25
+         [GLOBAL]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FIXED_VALUE_LAI = 0
+            FIXED_VALUE_RD = 0
+            TYPE = 1
+            [TIME_SERIES_FILE_1]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE_1
+
+            [TIME_SERIES_FILE_2]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE_2
+
+            [VEG_PROP_FILES]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               MzSEPfsListItemCount = 0
+            EndSect  // VEG_PROP_FILES
+
+         EndSect  // GLOBAL
+
+         [STATION_BASED]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            NO_TIMESERIES = 0
+            TYPE = 1
+            ShapeAxisUnit = 1000
+            ShapeGapFillName = ''
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+         EndSect  // STATION_BASED
+
+         [FULLY_DISTRIBUTED]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            TYPE = 1
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+         EndSect  // FULLY_DISTRIBUTED
+
+      EndSect  // VEGETATION
+
+      [CommandAreas]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         NO_AREAS = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // CommandAreas
+
+      [Demands]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         ShapeGapFillName = ''
+         NO_DEMANDS = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // Demands
+
+      [Priorities]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // Priorities
+
+      [PavedRunoffCoefficient]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99000
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // PavedRunoffCoefficient
+
+   EndSect  // LandUse
+
+   [Evapotrans]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      ETLayer = 1
+      [POTEVAPTRANS]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         [GLOBAL]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FIXED_VALUE = 0
+            TYPE = 1
+            [TIME_SERIES_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // GLOBAL
+
+         [STATION_BASED]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            NO_TIMESERIES = 0
+            TYPE = 1
+            ShapeAxisUnit = 1000
+            ShapeGapFillName = ''
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+         EndSect  // STATION_BASED
+
+         [FULLY_DISTRIBUTED]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            TYPE = 1
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+         EndSect  // FULLY_DISTRIBUTED
+
+      EndSect  // POTEVAPTRANS
+
+      [ETSurfaceElevation]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+      EndSect  // ETSurfaceElevation
+
+      [ETExtinctionDepth]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+      EndSect  // ETExtinctionDepth
+
+      [ETLayer]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+      EndSect  // ETLayer
+
+   EndSect  // Evapotrans
+
+   [River]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Filename = ||
+      Bathymetry = 0
+      FloodCodes = 0
+      [FloodCodes]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99013
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // FloodCodes
+
+      [Bathymetry]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 1000
+         RelativeToGround = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // Bathymetry
+
+   EndSect  // River
+
+   [RiverMF]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Filename = ||
+      IncludeMap = 0
+   EndSect  // RiverMF
+
+   [Overland]
+      Touched = 1
+      IsDataUsedInSetup = 1
+      SeparatedFlowAreas = 0
+      OverlandGroundWaterExchangeOption = 0
+      [Manning]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         Type = 0
+         FixedValue = 20
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 3600
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // Manning
+
+      [DetentionStorage]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 1002
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // DetentionStorage
+
+      [InitialWaterDepth]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 1000
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // InitialWaterDepth
+
+      [LeakageCoeff]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 2605
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // LeakageCoeff
+
+      [SeparatedFlowAreas]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99013
+         [DFS_2D_DATA_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 1
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // SeparatedFlowAreas
+
+   EndSect  // Overland
+
+   [OverlandSubcatchment]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      DistributionType = 1
+      Type = 1
+      ShapeAxisUnit = 1000
+      ShapeGapFillName = ''
+      NO_ZONES = 0
+      [DFS_2D_DATA_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = 1
+      EndSect  // DFS_2D_DATA_FILE
+
+      [SHAPE_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = ''
+      EndSect  // SHAPE_FILE
+
+   EndSect  // OverlandSubcatchment
+
+   [Unsatzone]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Bypass = 0
+      ClassificationType = 0
+      [UZSoilProfiles]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         ShapeGapFillName = ''
+         NO_SOIL_PROFILES = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // UZSoilProfiles
+
+      [TwoLayerUZSoilProperties]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         NO_SOIL_TYPES = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // TwoLayerUZSoilProperties
+
+      [ETSurfaceDepth]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 1000
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // ETSurfaceDepth
+
+      [UZGroundWaterDepthList]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 1
+         NumberOfLayers = 1
+         GroundWaterTableOption = 0
+         [UZGroundWaterTable]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Type = 0
+            FixedValue = 0
+            InterpMethod = 2
+            SearchRadius = 1000
+            ShowGridData = 1
+            ShowShapeData = 1
+            ShapeAxisUnit = 1000
+            ShapeItemUnit = 1000
+            RelativeToGround = 0
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+            [XYZ_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+            EndSect  // XYZ_FILE
+
+         EndSect  // UZGroundWaterTable
+
+         [UZGroundWaterDepth1]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Depth = 1
+         EndSect  // UZGroundWaterDepth1
+
+      EndSect  // UZGroundWaterDepthList
+
+      [SpecifiedClassification]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99013
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // SpecifiedClassification
+
+      [PartialAutomatic]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 99013
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // PartialAutomatic
+
+   EndSect  // Unsatzone
+
+   [SaturatedZone]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      DispersionOption = 0
+      Drainage = 0
+      TypeOfGeoParaDistribution = 0
+      TypeOfVerDiscr = 0
+      Wells = 0
+      FractureWells = 0
+      MimimumLayerThickness = 0.5
+      id = 2
+      TypeAmbientWaterHeadInput = 0
+      TypeOfRelPerm = 0
+      Threshold = 0
+      [GeoUnitsSZProperties]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+         NumberOfGeoUnits = 0
+      EndSect  // GeoUnitsSZProperties
+
+      [GeoLayersSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 1
+         NumberOfLayers = 1
+         [Layer_1]
+            Name = 'Aquifer'
+            id = 1
+            [LowerLevel]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               RelativeToGround = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // LowerLevel
+
+            [GeoUnit]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99013
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // GeoUnit
+
+            [HorHydrCon]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 2000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // HorHydrCon
+
+            [VerHydrCon]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 2000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // VerHydrCon
+
+            [SpecificYield]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // SpecificYield
+
+            [StorageCoef]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 5000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // StorageCoef
+
+            [Porosity]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // Porosity
+
+            [Dispersion]
+               [aLHH_aL]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  Type = 0
+                  FixedValue = 0
+                  InterpMethod = 2
+                  SearchRadius = 1000
+                  ShowGridData = 1
+                  ShowShapeData = 1
+                  ShapeAxisUnit = 1000
+                  ShapeItemUnit = 4702
+                  [DFS_2D_DATA_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = 1
+                  EndSect  // DFS_2D_DATA_FILE
+
+                  [SHAPE_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = ''
+                  EndSect  // SHAPE_FILE
+
+                  [XYZ_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                  EndSect  // XYZ_FILE
+
+               EndSect  // aLHH_aL
+
+               [aTHH_aT]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  Type = 0
+                  FixedValue = 0
+                  InterpMethod = 2
+                  SearchRadius = 1000
+                  ShowGridData = 1
+                  ShowShapeData = 1
+                  ShapeAxisUnit = 1000
+                  ShapeItemUnit = 4702
+                  [DFS_2D_DATA_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = 1
+                  EndSect  // DFS_2D_DATA_FILE
+
+                  [SHAPE_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = ''
+                  EndSect  // SHAPE_FILE
+
+                  [XYZ_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                  EndSect  // XYZ_FILE
+
+               EndSect  // aTHH_aT
+
+               [aTVH]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  Type = 0
+                  FixedValue = 0
+                  InterpMethod = 2
+                  SearchRadius = 1000
+                  ShowGridData = 1
+                  ShowShapeData = 1
+                  ShapeAxisUnit = 1000
+                  ShapeItemUnit = 4702
+                  [DFS_2D_DATA_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = 1
+                  EndSect  // DFS_2D_DATA_FILE
+
+                  [SHAPE_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = ''
+                  EndSect  // SHAPE_FILE
+
+                  [XYZ_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                  EndSect  // XYZ_FILE
+
+               EndSect  // aTVH
+
+               [aLVV]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  Type = 0
+                  FixedValue = 0
+                  InterpMethod = 2
+                  SearchRadius = 1000
+                  ShowGridData = 1
+                  ShowShapeData = 1
+                  ShapeAxisUnit = 1000
+                  ShapeItemUnit = 4702
+                  [DFS_2D_DATA_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = 1
+                  EndSect  // DFS_2D_DATA_FILE
+
+                  [SHAPE_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = ''
+                  EndSect  // SHAPE_FILE
+
+                  [XYZ_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                  EndSect  // XYZ_FILE
+
+               EndSect  // aLVV
+
+               [aTHV]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  Type = 0
+                  FixedValue = 0
+                  InterpMethod = 2
+                  SearchRadius = 1000
+                  ShowGridData = 1
+                  ShowShapeData = 1
+                  ShapeAxisUnit = 1000
+                  ShapeItemUnit = 4702
+                  [DFS_2D_DATA_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = 1
+                  EndSect  // DFS_2D_DATA_FILE
+
+                  [SHAPE_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                     ITEM_COUNT = 1
+                     ITEM_NUMBERS = ''
+                  EndSect  // SHAPE_FILE
+
+                  [XYZ_FILE]
+                     Touched = 0
+                     IsDataUsedInSetup = 0
+                     FILE_NAME = ||
+                  EndSect  // XYZ_FILE
+
+               EndSect  // aTHV
+
+            EndSect  // Dispersion
+
+            [HydrHeadUsedForAirFlow]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // HydrHeadUsedForAirFlow
+
+            [HorizontalAnisotropyRatio]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // HorizontalAnisotropyRatio
+
+            [VanGenuchtenAlpha]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // VanGenuchtenAlpha
+
+            [VanGenuchtenBeta]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // VanGenuchtenBeta
+
+            [ResidualSaturation]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // ResidualSaturation
+
+            [BrooksCoreyRelativePermeabilityExponent]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 99000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // BrooksCoreyRelativePermeabilityExponent
+
+         EndSect  // Layer_1
+
+      EndSect  // GeoLayersSZ
+
+      [GeoLensesSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+         NumberOfLenses = 0
+      EndSect  // GeoLensesSZ
+
+      [CompLayersSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 1
+         NumberOfLayers = 1
+         [Layer_1]
+            Name = 'Aquifer'
+            ModLayAvg = 0
+            ModLayCon = 0
+            id = -1
+            [LowerLevel]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               RelativeToGround = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // LowerLevel
+
+            [InitPotHead]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               RelativeToGround = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // InitPotHead
+
+            [OuterBoundary]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               MzSEPfsListItemCount = 0
+               NumberOfBoundaryConditions = 0
+            EndSect  // OuterBoundary
+
+            [HydrHeadUsedForAirFlow]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // HydrHeadUsedForAirFlow
+
+            [WettingThreshold]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // WettingThreshold
+
+            [InternalBoundary]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               ShapeAxisUnit = 1000
+               NoInternalBoundaries = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+            EndSect  // InternalBoundary
+
+         EndSect  // Layer_1
+
+      EndSect  // CompLayersSZ
+
+      [CompLayersGeoSZ]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 1
+         NumberOfLayers = 1
+         [Layer_1]
+            Name = 'Aquifer'
+            ModLayAvg = 0
+            ModLayCon = 0
+            id = -1
+            [InitPotHead]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               RelativeToGround = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // InitPotHead
+
+            [OuterBoundary]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               MzSEPfsListItemCount = 0
+               NumberOfBoundaryConditions = 0
+            EndSect  // OuterBoundary
+
+            [HydrHeadUsedForAirFlow]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // HydrHeadUsedForAirFlow
+
+            [WettingThreshold]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               FixedValue = 0
+               InterpMethod = 2
+               SearchRadius = 1000
+               ShowGridData = 1
+               ShowShapeData = 1
+               ShapeAxisUnit = 1000
+               ShapeItemUnit = 1000
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+               [XYZ_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+               EndSect  // XYZ_FILE
+
+            EndSect  // WettingThreshold
+
+            [InternalBoundary]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               Type = 0
+               ShapeAxisUnit = 1000
+               NoInternalBoundaries = 0
+               [DFS_2D_DATA_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = 1
+               EndSect  // DFS_2D_DATA_FILE
+
+               [SHAPE_FILE]
+                  Touched = 0
+                  IsDataUsedInSetup = 0
+                  FILE_NAME = ||
+                  ITEM_COUNT = 1
+                  ITEM_NUMBERS = ''
+               EndSect  // SHAPE_FILE
+
+            EndSect  // InternalBoundary
+
+         EndSect  // Layer_1
+
+      EndSect  // CompLayersGeoSZ
+
+      [Drainage]
+         DrainageOption = 1
+         [Level]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Type = 0
+            FixedValue = 0
+            InterpMethod = 2
+            SearchRadius = 1000
+            ShowGridData = 1
+            ShowShapeData = 1
+            ShapeAxisUnit = 1000
+            ShapeItemUnit = 1000
+            RelativeToGround = 0
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+            [XYZ_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+            EndSect  // XYZ_FILE
+
+         EndSect  // Level
+
+         [TimeConstant]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Type = 0
+            FixedValue = 0
+            InterpMethod = 2
+            SearchRadius = 1000
+            ShowGridData = 1
+            ShowShapeData = 1
+            ShapeAxisUnit = 1000
+            ShapeItemUnit = 2605
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+            [XYZ_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+            EndSect  // XYZ_FILE
+
+         EndSect  // TimeConstant
+
+         [DrainCode]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Type = 0
+            FixedValue = 0
+            InterpMethod = 2
+            SearchRadius = 1000
+            ShowGridData = 1
+            ShowShapeData = 1
+            ShapeAxisUnit = 1000
+            ShapeItemUnit = 99013
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+            [XYZ_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+            EndSect  // XYZ_FILE
+
+         EndSect  // DrainCode
+
+         [DistributedOptionCode]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            Type = 0
+            FixedValue = 0
+            InterpMethod = 2
+            SearchRadius = 1000
+            ShowGridData = 1
+            ShowShapeData = 1
+            ShapeAxisUnit = 1000
+            ShapeItemUnit = 99013
+            [DFS_2D_DATA_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // DFS_2D_DATA_FILE
+
+            [SHAPE_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = ''
+            EndSect  // SHAPE_FILE
+
+            [XYZ_FILE]
+               Touched = 0
+               IsDataUsedInSetup = 0
+               FILE_NAME = ||
+            EndSect  // XYZ_FILE
+
+         EndSect  // DistributedOptionCode
+
+      EndSect  // Drainage
+
+      [Drainage_Modflow]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+         NumberOfLayers = 0
+      EndSect  // Drainage_Modflow
+
+      [Well]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Filename = ||
+         IncludeMap = 0
+      EndSect  // Well
+
+      [HeadElevationUsedForAirFlow]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Type = 0
+         FixedValue = 0
+         InterpMethod = 2
+         SearchRadius = 1000
+         ShowGridData = 1
+         ShowShapeData = 1
+         ShapeAxisUnit = 1000
+         ShapeItemUnit = 1000
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+         [XYZ_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+         EndSect  // XYZ_FILE
+
+      EndSect  // HeadElevationUsedForAirFlow
+
+   EndSect  // SaturatedZone
+
+   [SaturatedZoneSubCatchment]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Wells = 0
+      [SZShallowGWRoutingZones]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         ShapeGapFillName = ''
+         NO_ZONES = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // SZShallowGWRoutingZones
+
+      [SZDeepGWRoutingZones]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         DistributionType = 1
+         Type = 1
+         ShapeAxisUnit = 1000
+         ShapeGapFillName = ''
+         NO_ZONES = 0
+         [DFS_2D_DATA_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = 1
+         EndSect  // DFS_2D_DATA_FILE
+
+         [SHAPE_FILE]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            FILE_NAME = ||
+            ITEM_COUNT = 1
+            ITEM_NUMBERS = ''
+         EndSect  // SHAPE_FILE
+
+      EndSect  // SZDeepGWRoutingZones
+
+      [Well]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         Filename = ||
+         IncludeMap = 0
+      EndSect  // Well
+
+   EndSect  // SaturatedZoneSubCatchment
+
+   [GroundwaterTable]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      Type = 0
+      FixedValue = 0
+      InterpMethod = 2
+      SearchRadius = 1000
+      ShowGridData = 1
+      ShowShapeData = 1
+      ShapeAxisUnit = 1000
+      ShapeItemUnit = 1000
+      RelativeToGround = 0
+      [DFS_2D_DATA_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = 1
+      EndSect  // DFS_2D_DATA_FILE
+
+      [SHAPE_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+         ITEM_COUNT = 1
+         ITEM_NUMBERS = ''
+      EndSect  // SHAPE_FILE
+
+      [XYZ_FILE]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         FILE_NAME = ||
+      EndSect  // XYZ_FILE
+
+   EndSect  // GroundwaterTable
+
+   [StoringOfResults]
+      Touched = 0
+      IsDataUsedInSetup = 1
+      ADInputData = 0
+      WaterBalance = 0
+      AdRadio = 0
+      HotStartData = 0
+      StoreHotDataAsResults = 0
+      OnlyStoreHotDataAtEndOfSimulation = 0
+      HotstartStoringTimestep_Hrs = 1
+      [DetailedTimeseriesOutput]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         MzSEPfsListItemCount = 4
+         NumberOfItems = 4
+         [Item_1]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            Name = ''
+            HydrComp = 59
+            Group = 1
+            X = 53551.12062917698
+            Y = 2652.49418454381
+            Z = 0
+            InclObserved = 0
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // Item_1
+
+         [Item_2]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            Name = ''
+            HydrComp = 59
+            Group = 1
+            X = 53869.58608721339
+            Y = 2624.801536018905
+            Z = 0
+            InclObserved = 0
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // Item_2
+
+         [Item_3]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            Name = ''
+            HydrComp = 59
+            Group = 1
+            X = 54132.66624819998
+            Y = 2652.49418454381
+            Z = 0
+            InclObserved = 0
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // Item_3
+
+         [Item_4]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            Name = ''
+            HydrComp = 59
+            Group = 1
+            X = 54437.28538197393
+            Y = 2624.801536018905
+            Z = 0
+            InclObserved = 0
+            [TIME_SERIES_FILE]
+               Touched = 1
+               IsDataUsedInSetup = 1
+               FILE_NAME = ||
+               ITEM_COUNT = 1
+               ITEM_NUMBERS = 1
+            EndSect  // TIME_SERIES_FILE
+
+         EndSect  // Item_4
+
+      EndSect  // DetailedTimeseriesOutput
+
+      [DetailedM11TimeseriesOutput]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         MzSEPfsListItemCount = 0
+         NumberOfItems = 0
+      EndSect  // DetailedM11TimeseriesOutput
+
+      [GridSeriesOutput]
+         Touched = 1
+         IsDataUsedInSetup = 1
+         MzSEPfsListItemCount = 1
+         NumberOfItems = 1
+         StoringTimeStep1 = 1
+         StoringTimeStep2 = 1
+         StoringTimeStep3 = 1
+         [Item_1]
+            Touched = 1
+            IsDataUsedInSetup = 1
+            DataType = 61
+         EndSect  // Item_1
+
+      EndSect  // GridSeriesOutput
+
+   EndSect  // StoringOfResults
+
+   [OutputModflow]
+      Touched = 0
+      IsDataUsedInSetup = 0
+      OutputControlOption = 0
+      StoringTimeStep = 10
+      StoringTimeStepHours = 24
+      ModPath = 0
+      [OutputDates]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+         NumberOfItems = 0
+      EndSect  // OutputDates
+
+      [OutputTimesteps]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 0
+         NumberOfItems = 0
+      EndSect  // OutputTimesteps
+
+      [PackagesOutput]
+         Touched = 0
+         IsDataUsedInSetup = 0
+         MzSEPfsListItemCount = 8
+         NumberOfItems = 8
+         [PackageOutput_1]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'HEAD'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_1
+
+         [PackageOutput_2]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'DRAWDOWN'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_2
+
+         [PackageOutput_3]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'BUDGET'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_3
+
+         [PackageOutput_4]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'BCF'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_4
+
+         [PackageOutput_5]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'RECHARGE'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_5
+
+         [PackageOutput_6]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'EVAPOTRANSPIRATION'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_6
+
+         [PackageOutput_7]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'DRAIN'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_7
+
+         [PackageOutput_8]
+            Touched = 0
+            IsDataUsedInSetup = 0
+            DataTypeID = 'WELL'
+            ASCII = 0
+            Binary = 0
+         EndSect  // PackageOutput_8
+
+      EndSect  // PackagesOutput
+
+   EndSect  // OutputModflow
+
+   [ExtraParams]
+      Touched = 0
+      IsDataUsedInSetup = 1
+      MzSEPfsListItemCount = 0
+      NoOfParams = 0
+   EndSect  // ExtraParams
+
+   [Result]
+      Touched = 0
+      IsDataUsedInSetup = 1
+      [ResultDetailedTS]
+         Touched = 0
+         IsDataUsedInSetup = 1
+      EndSect  // ResultDetailedTS
+
+      [ResultViewer]
+         Touched = 0
+         IsDataUsedInSetup = 1
+         LayerNo = 1
+      EndSect  // ResultViewer
+
+      [ResultM11DetailedTS]
+         Touched = 0
+         IsDataUsedInSetup = 1
+      EndSect  // ResultM11DetailedTS
+
+      [ResultMIKEView]
+         Touched = 0
+         IsDataUsedInSetup = 1
+      EndSect  // ResultMIKEView
+
+      [ResultPlotComposer]
+         Touched = 0
+         IsDataUsedInSetup = 1
+      EndSect  // ResultPlotComposer
+
+      [RunStatistics]
+         Touched = 0
+         IsDataUsedInSetup = 1
+         HtmlFilename = ||
+         ShapeFilename = ||
+      EndSect  // RunStatistics
+
+   EndSect  // Result
+
+   [Overview]
+      Touched = 0
+      IsDataUsedInSetup = 0
+   EndSect  // Overview
+
+EndSect  // MIKESHE_FLOWMODEL
+
